@@ -1,0 +1,117 @@
+[
+  {
+    "name": "edunews",
+    "base_url": "https://www.edunews.info/",
+    "blog": {
+      "enabled": true,
+      "index_urls": ["https://www.edunews.info/blog/"],
+      "article_patterns": ["/blog/"]
+    }
+  },
+  {
+    "name": "sikarcoachingsandschool",
+    "base_url": "https://sikarcoachingsandschool.com/",
+    "blog": {
+      "enabled": true,
+      "index_urls": ["https://sikarcoachingsandschool.com/blog/"],
+      "article_patterns": ["/blog/"]
+    }
+  },
+  {
+    "name": "sikarlearningpoint",
+    "base_url": "https://sikarlearningpoint.com/",
+    "blog": {
+      "enabled": true,
+      "index_urls": ["https://sikarlearningpoint.com/blog/"],
+      "article_patterns": ["/blog/"]
+    }
+  },
+  {
+    "name": "eduhubsikar",
+    "base_url": "https://www.eduhubsikar.com/",
+    "blog": {
+      "enabled": true,
+      "index_urls": ["https://www.eduhubsikar.com/blog/"],
+      "article_patterns": ["/blog/"]
+    }
+  },
+  {
+    "name": "bestschoolsinsikar",
+    "base_url": "https://bestschoolsinsikar.com/",
+    "blog": {
+      "enabled": true,
+      "index_urls": ["https://bestschoolsinsikar.com/blog/"],
+      "article_patterns": ["/blog/"]
+    }
+  },
+  {
+    "name": "sikareducationhub",
+    "base_url": "https://www.sikareducationhub.in/",
+    "blog": {
+      "enabled": true,
+      "index_urls": ["https://www.sikareducationhub.in/blog/"],
+      "article_patterns": ["/blog/"]
+    }
+  },
+  {
+    "name": "besteducationsikar",
+    "base_url": "https://www.besteducationsikar.com/",
+    "blog": {
+      "enabled": true,
+      "index_urls": ["https://www.besteducationsikar.com/blog/"],
+      "article_patterns": ["/blog/"]
+    }
+  },
+  {
+    "name": "goodschoolsinrajasthan",
+    "base_url": "https://www.goodschoolsinrajasthan.com/",
+    "blog": {
+      "enabled": true,
+      "index_urls": ["https://www.goodschoolsinrajasthan.com/blog/"],
+      "article_patterns": ["/blog/"]
+    }
+  },
+  {
+    "name": "bestcoachingsinsikar",
+    "base_url": "https://bestcoachingsinsikar.com/",
+    "blog": {
+      "enabled": true,
+      "index_urls": ["https://bestcoachingsinsikar.com/blog/"],
+      "article_patterns": ["/blog/"]
+    }
+  },
+  {
+    "name": "sikarcoachings",
+    "base_url": "https://www.sikarcoachings.com/",
+    "blog": {
+      "enabled": true,
+      "index_urls": ["https://www.sikarcoachings.com/blog/"],
+      "article_patterns": ["/blog/", "/article/"]
+    }
+  },
+  {
+    "name": "matrixedu",
+    "base_url": "https://www.matrixedu.in/",
+    "blog": {
+      "enabled": true,
+      "index_urls": ["https://www.matrixedu.in/blog/"],
+      "article_patterns": ["/blog/"]
+    }
+  },
+  {
+    "name": "blog.matrixhighschool",
+    "base_url": "https://www.blog.matrixhighschool.org/",
+    "blog": {
+      "enabled": true,
+      "index_urls": ["https://www.blog.matrixhighschool.org/"],
+      "article_patterns": ["/20", "/article", "/post"]
+    }
+  },
+  {
+    "name": "matrixhighschool",
+    "base_url": "https://www.matrixhighschool.org/",
+    "blog": {
+      "enabled": false
+    }
+  }
+]

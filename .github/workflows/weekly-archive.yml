@@ -1,0 +1,45 @@
+name: Weekly Website Archive
+
+on:
+  schedule:
+    - cron: "0 4 * * 0"
+  workflow_dispatch:
+
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Run Tests
+        env:
+          PYTHONPATH: .
+        run: |
+          python -m unittest discover tests/
+
+      - name: Run crawler
+        env:
+          PYTHONPATH: .
+          ARCHIVE_ENABLED: ${{ vars.ARCHIVE_ENABLED || 'false' }}
+          WAYBACK_ACCESS_KEY: ${{ secrets.WAYBACK_ACCESS_KEY }}
+          WAYBACK_SECRET_KEY: ${{ secrets.WAYBACK_SECRET_KEY }}
+        run: |
+          python crawler.py
+
+      - name: Upload results artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: run-results
+          path: run-results.json
+          if-no-files-found: ignore
